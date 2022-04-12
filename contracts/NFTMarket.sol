@@ -4,11 +4,12 @@ pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "./NFT.sol";
 /*it is an security mechanism it is going to kind of protect certain transactions that are actually talking to a seprate contract prevent 
 multiple transaction*/
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract NFTMarket is ReentrancyGuard{
+contract NFTMarket is ReentrancyGuard {
     using Counters for Counters.Counter;
 
 //set counter for tokens and no of items sold
@@ -48,7 +49,7 @@ contract NFTMarket is ReentrancyGuard{
         bool sold
     );
     //next we are making function that returns listing price
-    function getListtingPrice() public view returns (uint256) {
+    function getListingPrice() public view returns (uint256) {
         return listingPrice;
     }
 

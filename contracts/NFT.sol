@@ -18,7 +18,7 @@ contract NFT is ERC721URIStorage {
         ContractAddress = marketplaceAddress;
     }
     //for minting the new tokens 
-    function createToken(string memory tokenURI) public returns (uint) {
+    function createToken(string memory toknURI) public returns (uint) {
         //increment tokenids
         _tokenIds.increment();
         //next variable give you the current token id
@@ -26,7 +26,7 @@ contract NFT is ERC721URIStorage {
         //next we are going for mint token
         _mint(msg.sender, newItemId);
         //set an actual token uri
-        _setTokenURI(newItemId, tokenURI);
+	_setTokenURI(newItemId, toknURI);
         /*set an approval for all passing in the contract address and this is giving approval to marketplace trasact this token between users form within
         another contract*/
         setApprovalForAll(ContractAddress, true);
