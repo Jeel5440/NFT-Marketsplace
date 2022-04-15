@@ -8,22 +8,22 @@ function MyApp({ Component, pageProps }) {
       <p className="text-4xl font-bold">Metaverse Marketplace</p>
       <div className='flex mt-5'>
       <Link href='/'>
-          <a className='mr-6 text-pink-500'>
+          <a className='mr-6 text-pink-500 font-bold'>
             Home
           </a>
         </Link>
         <Link href='/create-item'>
-          <a className='mr-6 text-pink-500'>
+          <a className='mr-6 text-pink-500  font-bold'>
             Sell Digital Asset
           </a>
         </Link>
         <Link href='/my-assets'>
-          <a className='mr-6 text-pink-500'>
+          <a className='mr-6 text-pink-500  font-bold'>
             My assets
           </a>
         </Link>
         <Link href='/creator-dashboard'>
-          <a className='mr-6 text-pink-500'>
+          <a className='mr-6 text-pink-500  font-bold'>
             Creator Dashboard
           </a>
         </Link>
